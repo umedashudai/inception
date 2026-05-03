@@ -4,4 +4,4 @@ RUN apt-get -y update && apt-get install -y nginx && apt-get install openssl -ya
 
 COPY ./tools/entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/entrypoint.sh"]

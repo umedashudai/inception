@@ -11,4 +11,4 @@ COPY ./tools/script.sh /
 COPY ./tools/wp-config.php /
 
 
-ENTRYPOINT [ "/script.sh" ]
+CMD [ "/script.sh" ]
