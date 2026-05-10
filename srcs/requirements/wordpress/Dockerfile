@@ -12,4 +12,4 @@ COPY ./tools/wp-config.php /
 
 RUN chmod +x /script.sh 
 
-CMD [ "/script.sh" ]
+ENTRYPOINT [ "/script.sh" ]
