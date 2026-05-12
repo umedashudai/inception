@@ -17,6 +17,8 @@ FLUSH PRIVILEGES;
 EOF
 fi #初期databaseを作成
 
-mysqladmin -u root -p"${db_root_pwd}" shutdown #一時停止
+mysqladmin -u root -p"${db_root_pwd}" -h 127.0.0.1 shutdown #一時停止
 
-exec mysqld #本格起動
+exec mariadbd --user=mysql  #本格起動
+# -h 127.0.0.1
+# exec mysqld

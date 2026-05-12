@@ -13,7 +13,7 @@ start:
 	@docker compose -f ./srcs/docker-compose.yml start
 
 status:
-	@docker compose ps
+	@docker compose -f ./srcs/docker-compose.yml ps
 
 
 .PHONY: all up down stop status
