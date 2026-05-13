@@ -64,7 +64,7 @@ make start
 ```bash
 make ps
 ```
-##Resources
+## Resources
     https://make.wordpress.org/cli/handbook/guides/installing/
     https://nginx.org/en/docs/
     https://ja.wordpress.org/support/article/how-to-install-wordpress/
