@@ -12,6 +12,17 @@ This project has been created as part of the 42 curriculum by sumedai.
     This project involves setting up a simple web application environment using Docker.
     The NGINX, WordPress, and MariaDB services are built from Dockerfiles, while networks and volumes are managed through a docker-compose.yml file.
 
+## Project Description
+* Secrets vs Environent Variables
+* docker Network vs Host Network
+* Docker Volumes vs Bind Mounts
+
+
+<!-- Virtual Machines vs Docker
+◦ Secrets vs Environment Variables
+◦ Docker Network vs Host Network
+◦ Docker Volumes vs Bind Mounts -->
+
 ## Instructions
 
 ### Requirements
