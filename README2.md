@@ -14,7 +14,8 @@ This project has been created as part of the 42 curriculum by sumedai.
 
 ## Project Description
 * Secrets vs Environent Variables
-* docker Network vs Host Network
+
+* Docker Network vs Host Network
 * Docker Volumes vs Bind Mounts
 
 
