@@ -15,14 +15,35 @@ This project has been created as part of the 42 curriculum by sumedai.
 ## Project Description
 * Secrets vs Environent Variables
 
+Secrets are a mechanism for securely managing sensitive information such as passwords and API keys, and are commonly used in Docker Swarm and Kubernetes. On the other hand, Environment Variables can also store data used by systems and applications, but they are not recommended for handling sensitive information.
+
+The reasons are as follows:
+- Environment variables are implicitly accessible by processes, making it difficult to track where and how they are used.
+- Applications may expose environment variables through debugging or logging.
+- Environment variables are automatically inherited by child processes.
+- When an application crashes, environment variables may be written to log files in plain text.
+- Developers may fail to recognize that sensitive information is stored in environment variables and accidentally expose it.
+
+Therefore, using Secrets is considered safer than Environment Variables in production environments.
 * Docker Network vs Host Network
+
+Docker networking is a mechanism that enables communication between containers and external services.
+- Automatically manages DNS resolution, routing, and IP address allocation
+- Allows containers to communicate without manual network configuration
+
+Host Network is a network mode in which a container shares the host machine’s network stack directly.
+- Uses the host’s network interfaces instead of having its own isolated network namespace
+- Does not require NAT or port mapping
+- Reduces networking overhead
+- Provides weaker network isolation compared to bridge networks
 * Docker Volumes vs Bind Mounts
 
-
-<!-- Virtual Machines vs Docker
-◦ Secrets vs Environment Variables
-◦ Docker Network vs Host Network
-◦ Docker Volumes vs Bind Mounts -->
+Docker Volume is a mechanism for sharing data between containers and the host filesystem.
+- The storage location is managed automatically by Docker Engine
+- Commonly used for persistent data such as databases
+Bind Mount is a mechanism for sharing files and directories between containers and the host filesystem.
+- The storage location is specified manually by the user
+- Commonly used for development environments and configuration sharing
 
 ## Instructions
 
