@@ -62,17 +62,36 @@ git clone <repository_url>
 cd inception
 ```
 
-### Build and Run
+<!-- ### Build and Run
 
 ```bash
-make
+make build
 ```
 
 or
 
 ```bash
 make up
+``` -->
+### Build
+
+## Build all Docker images.
+
+```bash
+make build
 ```
+
+### Run
+
+## Start all containers.
+
+make up
+Build and Run
+
+To rebuild images and start containers:
+
+make build
+make up
 
 ### Stop Containers
 
