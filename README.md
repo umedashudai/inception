@@ -13,6 +13,20 @@
     The NGINX, WordPress, and MariaDB services are built from Dockerfiles, while networks and volumes are managed through a docker-compose.yml file.
 
 ## Project Description
+* Virtaul Machines vs Docker
+
+Virtual Machines virtualize an entire operating system, including the guest OS and its kernel. This provides strong isolation but requires more system resources and longer startup times.
+
+Docker uses containerization, where containers share the host operating system kernel. As a result, containers are lightweight, start quickly, and consume fewer resources than virtual machines.
+
+Advantages of Docker:
+
+- Faster startup and lower resource usage compared to virtual machines
+- Consistent environments across different machines
+- Easier application deployment and management
+- Developers can quickly set up and run applications anywhere Docker is available, reducing - environment differences and improving development efficiency
+
+
 * Secrets vs Environent Variables
 
 Secrets are a mechanism for securely managing sensitive information such as passwords and API keys, and are commonly used in Docker Swarm and Kubernetes. On the other hand, Environment Variables can also store data used by systems and applications, but they are not recommended for handling sensitive information.
@@ -75,7 +89,7 @@ make up
 ``` -->
 ### Build
 
-## Build all Docker images.
+### Build all Docker images.
 
 ```bash
 make build
@@ -83,7 +97,7 @@ make build
 
 ### Run
 
-## Start all containers.
+### Start all containers.
 
 make up
 Build and Run
@@ -122,11 +136,13 @@ make ps
     https://ja.wordpress.org/support/article/how-to-install-wordpress/
     https://docs.docker.com/reference/
     https://mariadb.com/docs
+### AI Usage
 
-<!-- A “Description” section that clearly presents the project, including its goal and a
-brief overview.
-• An “Instructions” section containing any relevant information about compilation,
-installation, and/or execution.
-• A “Resources” section listing classic references related to the topic (documentation,
-articles, tutorials, etc.), as well as a description of how AI was used —
-specifying for which tasks and which parts of the project. -->
+AI tools were used during the development of this project to support learning and research. Specifically, they were used for:
+
+Looking up the meaning of technical terms related to Docker, NGINX, WordPress, MariaDB, and Linux system administration.
+Checking command usage, syntax, and configuration examples.
+Finding official documentation and reference materials.
+Comparing different technologies and concepts to improve understanding.
+
+All implementation decisions, configuration files, and source code were reviewed, tested, and validated by the author.
