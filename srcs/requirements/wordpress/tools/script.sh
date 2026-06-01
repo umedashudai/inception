@@ -51,9 +51,9 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 
 fi
 
-sed -i 's/listen = \/run\/php\/php7.4-fpm.sock/listen = 9000/g' /etc/php/7.4/fpm/pool.d/www.conf
+sed -i 's/listen = \/run\/php\/php8.2-fpm.sock/listen = 9000/g' /etc/php/8.2/fpm/pool.d/www.conf
 #php-fpmの設定を行う
 
-mkdir /run/php
+mkdir -p /run/php
 
-/usr/sbin/php-fpm7.4 -F
+/usr/sbin/php-fpm8.2 -F

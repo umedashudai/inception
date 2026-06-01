@@ -1,7 +1,9 @@
 all: up
 
 up:
-	@docker compose -f ./srcs/docker-compose.yml up -d
+	@mkdir -p /home/sumedai/data/mariadb
+	@mkdir -p /home/sumedai/data/wordpress
+	@docker compose -f ./srcs/docker-compose.yml up --build
 
 down:
 	@docker compose -f ./srcs/docker-compose.yml down
